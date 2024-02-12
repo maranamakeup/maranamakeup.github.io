@@ -1,0 +1,191 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'Nympha Trial';
+  src: url('/fonts/NymphaTrial-Regular.ttf') format('truetype');
+  /* Add additional font formats (e.g., woff, woff2) for better browser compatibility */
+}
+
+@font-face {
+  font-family: 'Lato Regular';
+  src: url('/fonts/Lato-Regular.ttf') format('truetype');
+  /* Add additional font formats (e.g., woff, woff2) for better browser compatibility */
+}
+
+.content {
+  min-height: 500vh;
+  /* 
+background: linear-gradient(to bottom, #5e69a9, #ffffff); 
+site importante que cria o código para que o gradiente do background seja melhor: https://non-boring-gradients.netlify.app/
+*/
+  background: linear-gradient(180deg, rgb(36.863% 41.176% 66.275%) 0%, rgb(36.864% 41.177% 66.275%) 6.25%, rgb(36.878% 41.191% 66.283%) 12.5%, rgb(36.941% 41.249% 66.316%) 18.75%, rgb(37.109% 41.406% 66.406%) 25%, rgb(37.465% 41.737% 66.596%) 31.25%, rgb(38.111% 42.34% 66.941%) 37.5%, rgb(39.176% 43.332% 67.51%) 43.75%, rgb(40.809% 44.853% 68.382%) 50%, rgb(43.184% 47.065% 69.651%) 56.25%, rgb(46.497% 50.152% 71.421%) 62.5%, rgb(50.968% 54.318% 73.809%) 68.75%, rgb(56.84% 59.789% 76.945%) 75%, rgb(64.378% 66.812% 80.972%) 81.25%, rgb(73.873% 75.658% 86.044%) 87.5%, rgb(85.635% 86.616% 92.327%) 93.75%, rgb(100% 100% 100%) 100% );
+  position: relative;
+}
+
+
+.horizontal-line, .vertical-line {
+  position: absolute;
+  background-color: #cccccc;
+}
+
+.horizontal-line {
+  top: 1.2%;
+  left: 0;
+  width: 100%;
+  height: 1pt;
+}
+
+.vertical-line {
+  top: 0;
+  left: 1em;
+  width: 1pt;
+  height: 100%;
+}
+
+
+.logo-container {
+  width: 90%;
+  margin-top: 0%;
+  margin-left: 13%;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.content .image-container {
+  position: absolute;
+  right: 10%;
+  top: 17.5%;
+  width: 25%;
+  height: auto;
+}
+
+.content .image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.sobre-mim-text {
+  position: absolute;
+  top: 32.5%;
+  right: 20%;
+  transform: translateX(50%);
+  font-family: 'Nympha Trial', Arial, sans-serif; /* Fallback to Arial if Nympha is not available */
+  color: #ffffff;
+  font-size: 44px;
+}
+
+.text-container {
+  flex: 0 0 20%; /* Fixed 50% width */
+  margin-left: 5%; /* 5% from the left margin */
+  position: absolute;
+  top: 27.5%; /* 30% from the top */
+  box-sizing: border-box; /* Include padding and border in total width and height */
+  padding: 1em; /* Add padding to prevent text overflow */
+  max-width: 50%; /* Ensure text does not exceed container width */
+}
+
+.lorem-text {
+  font-family: 'Lato Regular', Arial, sans-serif; /* Fallback to Arial if Lato is not available */
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5; /* Adjust line height as needed */
+}
+
+.brand-text {
+  position: absolute;
+  top: 0.5em; /* Adjust as needed */
+  left: 1em; /* Adjust as needed */
+  font-family: 'Nympha Trial', sans-serif;
+  color: #ffffff; /* Set the text color to white */
+  font-size: 24px; /* Adjust as needed */
+  z-index: 2; /* Ensure the text is on top */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  margin-top: auto; /* Push to the bottom */
+  margin-right: 2%; /* Adjust as needed */
+}
+
+.nav-link {
+  font-family: 'Nympha Trial', Arial, sans-serif; /* Fallback to Arial if Lato is not available */
+  color: #ffffff; /* Set the text color to white */
+  font-size: 18px;
+  margin-left: 20px; /* Adjust as needed */
+  margin-top: 1.2%; /* Adjust as needed */
+  margin-right: 0.5%; /* Adjust as needed */
+}
+
+.portfolio-text {
+  position: absolute;
+  top: 42.5%;
+  left: 6%;
+  font-family: 'Nympha Trial', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 44px; /* Adjust as needed */
+  z-index: 2; /* Ensure the text is on top */
+}
+
+.image-row-1 {
+  display: flex;
+  justify-content: space-around; /* Center the images within the row */
+  position: absolute; /* Change position to absolute */
+  top: 45%; /* Adjust the top position as needed */
+  margin-left: 5%;
+  max-width: 40%; /* Ensure the row doesn't exceed the content width */
+}
+
+.image-row-2 {
+  display: flex;
+  justify-content: space-around; /* Center the images within the row */
+  position: absolute; /* Change position to absolute */
+  top: 55%; /* Adjust the top position as needed */
+  margin-top: 4%;
+  margin-left: 5%;
+  max-width: 40%; /* Ensure the row doesn't exceed the content width */
+}
+
+
+.image-item {
+  width: 40%; /* Adjust as needed */
+  margin: 0 0%; /* Adjust as needed to add space between images */
+  position: relative;
+  text-align: center; /* Center the content within each image-item */
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+}
+
+.image-caption {
+  position: relative;
+  margin-top: 0 em;
+  color: #ffffff;
+  font-family: 'Nympha Trial', Arial, sans-serif;
+  color: #ffffff;
+  font-size: 16px; /* Adjust as needed */
+  z-index: 2; /* Ensure the text is on top */
+}
+
+.image-caption:first-child {
+  margin-top: 0; /* Remove top margin for the first caption */
+}
+
+.contactos-text {
+  position: absolute;
+  top: 70%;
+  left: 6%;
+  font-family: 'Nympha Trial', Arial, sans-serif;
+  color: #000000;
+  font-size: 44px; /* Adjust as needed */
+  z-index: 2; /* Ensure the text is on top */
+}
